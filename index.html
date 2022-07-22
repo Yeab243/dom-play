@@ -32,7 +32,13 @@
       <b> This is a webpage that helps the actors of "Captain Phillips" touch the name of the character they are 
       playing so it highlights their lines to make it easier to rehearse. 
       I created a small, single page application using the DOM. With a single click, it highlights 
-      all lines for a specific actor in a play yellow and the rest grey. The does the work without page re-loads.
+      all lines for a specific actor in a play yellow and the rest grey. The page does the work without page re-loads.
+      I created a function named highlight which passes in the span element by reference (meaning the live instance of the element on the page) and 
+      changes the background color. I added the capability of toggling (switching between 2 states) the background color 
+      of the element passed into the function. In order to wire events to a set of elements, I placed the actor spans into a div with an id of play.
+      Next, I wired a simple function to each of the spans inside the div. The advantage is I use very little code to
+      add events and functions to each item all at once.
+
       </b>
     </P>
 
