@@ -22,7 +22,7 @@ h1 {
 }
 
 main.wrapper {
-    background-color: white;
+    background-color: rgb(192, 255, 214);
     overflow: auto;
 }
 

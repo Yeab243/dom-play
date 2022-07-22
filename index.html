@@ -1,33 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>DOM Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <style>
+    /* #play span {
+
+        background-color: yellow;
+
+    } */
+  </style>
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank" style="color: black"> <b>Captain Phillips </b></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
-     
+
+    
+
    <main class="wrapper">
-    <p>Content goes here</p>
-     <footer>
-      <p><small>&copy; 2021 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+    <P> 
+      <b> This is a webpage that helps the actors of "Captain Phillips" touch the name of the character they are 
+      playing so it highlights their lines to make it easier to rehearse. 
+      I created a small, single page application using the DOM. With a single click, it highlights 
+      all lines for a specific actor in a play yellow and the rest grey. The does the work without page re-loads.
+      </b>
+    </P>
+
+    <br>
+
+      <div id="play">
+    <p><span data-actor="shane">
+            <b>SHANE:</b> Ken, get out here. <br>
+      
+            I need eyes on the wing. Skiff coming in. <br>
+      
+            I'm on it. <br>
+      </span></p>
+
+    <p><span data-actor="muse">
+            <b>MUSE:</b> Hurry up. <br>
+
+            We need a bigger one for that ship. <br>
+            
+            I want this welded by the morning <br>
+            
+            by tomorrow, got it? <br>
+            
+            [MAN SPEAKING IN SOMALI] <br>
+      </span></p>
+
+    <p><span data-actor="phillips">
+            <b>PHILLIPS:</b> What did you say? <br>
+          
+            Sound the alarm. <br>
+
+            Get U.S. Maritime Emergency for me. <br>
+
+            [DIALING ON PHONE] <br>
+ 
+            [HORN BLARES <br>
+
+            THEN SIREN WAILING] <br>
+
+            Muster stations. This is not a drill. <br>
+
+            Everyone to muster stations. <br>
+
+            [OVER PA] This is not a drill. <br>
+
+            Come on. <br>  
+          </span></p>
+
+    <p><span data-actor="man">
+            <b>Man 2:</b> Come on. Let's go. Go. <br>
+
+            [PHONE RINGS] <br>
+            
+            Yeah, Cap. <br>
+            
+            They're coming back. <br>
+            
+            I want max revs. Take the limits off. <br>
+             
+            Copy that. Canceling all limits. <br>
+            
+            Five degrees starboard. <br>
+            
+            Starboard, 5 degrees. <br>
+            
+            Get ready. <br>
+            
+            U.S. Maritime Emergency line.  <br>
+    </span></p>
+
+    <p><span data-actor="muse">
+            <b>MUSE:</b> Untie the ladder. <br>
+            
+            Give me the other one. <br>
+            
+            [SHOUTING IN SOMALI] <br>
+            
+            Let's go, let's go! <br>
+            
+            Hurry up, Bilal. <br>  
+    </span></p>
+
+    <p><span data-actor="shane">
+            <b>SHANE:</b> Yeah. They're at 800 yards.
+
+            Prepare for hard turns.
+    </span></p> 
+
+    <p><span data-actor="phillips">
+            <b>PHILLIPS:</b> Our course is 166. <br>  
+            
+            Our speed is 19 knots. <br>  
+            
+            Copy that, Alabama. <br>  
+            
+            Relaying to military channels now. <br>  
+            
+            Copy that. <br>             
+    </span></p>
+
+    <p><span data-actor="man">
+            <b>MAN 2:</b> Come on, men. <br> 
+
+            [PIRATES SHOUTING IN SOMALI] <br> 
+    </span></p>
+
+    <p><span data-actor="shane">
+            <b>SHANE:</b> Yeah. They're at 800 yards. <br> 
+             
+            Prepare for hard turns. <br> 
+    </span></p>
+
+    <p><span data-actor="muse">
+          <b>MUSE:</b> Alabama, this is your final warning. <br> 
+
+          Stop the ship. <br> 
+
+          They're not stopping. <br> 
+
+          Show them who we are, Muse. <br> 
+    </span></p>
+
+    
+    <p><span data-actor="phillips">
+          <b>PHILLIPS:</b> Our course is 166. <br> 
+          
+          Our speed is 19 knots. <br> 
+          
+          Copy that, Alabama. <br> 
+          
+          Relaying to military channels now. <br> 
+          
+          Copy that. <br> 
+    </span></p>
+
+    <p><span data-actor="man">
+          <b>MAN 2:</b> Why doesn't the <br> 
+          
+          company give us armed guards? <br> 
+      </div>
+    <footer>
+      <p><small>&copy; 2022 by 
+          Yeabsira Girma, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
      </p>
     </footer>
   </main>
   <script src="js/main.js"></script>
+  <script src="js/dom-play.js"></script>
  </body>
 </html>
