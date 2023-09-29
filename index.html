@@ -8,19 +8,29 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <style>
-    /* #play span {
+        #cprt {
+            background-color: rgb(0 0 0 / 18%);
+            font-weight: bolder;
+            color: rgb(7, 7, 7); /* This sets the text color to white for better readability on the aquamarine background */
+            padding: 2px; /* Add padding to provide space around the text inside the heading */
+            text-align: center; /* Center the text horizontally */
+            border-radius: 4px; /* Optional: Adds rounded corners to the heading */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow effect */
+        }
 
-        background-color: yellow;
-
-    } */
-  </style>
+        #domplay{
+                background-color: blueviolet;
+                font-weight: 800;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
  </head>
  <body>
      <header>
-     <h1>DOM Play</h1>
+     <h1 id="domplay">DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank" style="color: black"> <b>Captain Phillips </b></a>
+            <a href="Captain Philliphs.html" style="color: rgb(10, 245, 253)"> <b>Captain Phillips </b></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
@@ -29,158 +39,29 @@
 
    <main class="wrapper">
     <P> 
-      <b> This is a webpage that helps the actors of "Captain Phillips" touch the name of the character they are 
-      playing so it highlights their lines to make it easier to rehearse. 
-      I created a small, single page application using the DOM. With a single click, it highlights 
-      all lines for a specific actor in a play yellow and the rest grey. The page does the work without page re-loads.
-      I created a function named highlight which passes in the span element by reference (meaning the live instance of the element on the page) and 
-      changes the background color. I added the capability of toggling (switching between 2 states) the background color 
-      of the element passed into the function. In order to wire events to a set of elements, I placed the actor spans into a div with an id of play.
-      Next, I wired a simple function to each of the spans inside the div. The advantage is I use very little code to
-      add events and functions to each item all at once.
+        <body>
+                <h1 id="cprt">Captain Phillips Rehearsal Tool</h1>
+                <ul>
+                    <li>This is a webpage that helps the actors of "Captain Phillips" touch the name of the character they are playing so it highlights their lines to make it easier to rehearse.</li>
+                    <li>Created a small, single page application using the DOM.</li>
+                    <li>With a single click, it highlights all lines for a specific actor in a play yellow and the rest grey.</li>
+                    <li>The page performs this action without page re-loads.</li>
+                    <li>Created a function named <code>highlight</code> which passes in the <code>span</code> element by reference, meaning the live instance of the element on the page, and changes the background color.</li>
+                    <li>Added the capability of toggling (switching between 2 states) the background color of the element passed into the function.</li>
+                    <li>To wire events to a set of elements, placed the actor spans into a <code>div</code> with an <code>id</code> of <code>play</code>.</li>
+                    <li>Wired a simple function to each of the spans inside the <code>div</code>.</li>
+                    <li>The advantage is using very little code to add events and functions to each item all at once.</li>
+                </ul>
 
-      </b>
+                <p>Click the <strong>Captain Phillips</strong> navigation button, at the top, to review the rehearsal.</p>
+
+            </body>
     </P>
 
     <br>
 
-      <div id="play">
-    <p><span data-actor="shane">
-            <b>SHANE:</b> Ken, get out here. <br>
-      
-            I need eyes on the wing. Skiff coming in. <br>
-      
-            I'm on it. <br>
-      </span></p>
-
-    <p><span data-actor="muse">
-            <b>MUSE:</b> Hurry up. <br>
-
-            We need a bigger one for that ship. <br>
-            
-            I want this welded by the morning <br>
-            
-            by tomorrow, got it? <br>
-            
-            [MAN SPEAKING IN SOMALI] <br>
-      </span></p>
-
-    <p><span data-actor="phillips">
-            <b>PHILLIPS:</b> What did you say? <br>
-          
-            Sound the alarm. <br>
-
-            Get U.S. Maritime Emergency for me. <br>
-
-            [DIALING ON PHONE] <br>
- 
-            [HORN BLARES <br>
-
-            THEN SIREN WAILING] <br>
-
-            Muster stations. This is not a drill. <br>
-
-            Everyone to muster stations. <br>
-
-            [OVER PA] This is not a drill. <br>
-
-            Come on. <br>  
-          </span></p>
-
-    <p><span data-actor="man">
-            <b>Man 2:</b> Come on. Let's go. Go. <br>
-
-            [PHONE RINGS] <br>
-            
-            Yeah, Cap. <br>
-            
-            They're coming back. <br>
-            
-            I want max revs. Take the limits off. <br>
-             
-            Copy that. Canceling all limits. <br>
-            
-            Five degrees starboard. <br>
-            
-            Starboard, 5 degrees. <br>
-            
-            Get ready. <br>
-            
-            U.S. Maritime Emergency line.  <br>
-    </span></p>
-
-    <p><span data-actor="muse">
-            <b>MUSE:</b> Untie the ladder. <br>
-            
-            Give me the other one. <br>
-            
-            [SHOUTING IN SOMALI] <br>
-            
-            Let's go, let's go! <br>
-            
-            Hurry up, Bilal. <br>  
-    </span></p>
-
-    <p><span data-actor="shane">
-            <b>SHANE:</b> Yeah. They're at 800 yards.
-
-            Prepare for hard turns.
-    </span></p> 
-
-    <p><span data-actor="phillips">
-            <b>PHILLIPS:</b> Our course is 166. <br>  
-            
-            Our speed is 19 knots. <br>  
-            
-            Copy that, Alabama. <br>  
-            
-            Relaying to military channels now. <br>  
-            
-            Copy that. <br>             
-    </span></p>
-
-    <p><span data-actor="man">
-            <b>MAN 2:</b> Come on, men. <br> 
-
-            [PIRATES SHOUTING IN SOMALI] <br> 
-    </span></p>
-
-    <p><span data-actor="shane">
-            <b>SHANE:</b> Yeah. They're at 800 yards. <br> 
-             
-            Prepare for hard turns. <br> 
-    </span></p>
-
-    <p><span data-actor="muse">
-          <b>MUSE:</b> Alabama, this is your final warning. <br> 
-
-          Stop the ship. <br> 
-
-          They're not stopping. <br> 
-
-          Show them who we are, Muse. <br> 
-    </span></p>
-
-    
-    <p><span data-actor="phillips">
-          <b>PHILLIPS:</b> Our course is 166. <br> 
-          
-          Our speed is 19 knots. <br> 
-          
-          Copy that, Alabama. <br> 
-          
-          Relaying to military channels now. <br> 
-          
-          Copy that. <br> 
-    </span></p>
-
-    <p><span data-actor="man">
-          <b>MAN 2:</b> Why doesn't the <br> 
-          
-          company give us armed guards? <br> 
-      </div>
     <footer>
-      <p><small>&copy; 2022 by 
+      <p><small>&copy; 2023 by 
           Yeabsira Girma, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
           <a id="css-checker" href="#">Check CSS</a></small>
